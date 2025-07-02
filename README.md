@@ -130,5 +130,18 @@ Step 4 - Tackling advanced questions with the help of Amazon Q
 - Keep going with your analysis. Copy-paste the following question into the Amazon Q chat box and click the Submit button.
   - Prompt: Now, can you change the query to show the worst 5 countries instead?
 
-##### 1.2) Preparing a new dataset for the ML team
+##### 1.2) Preparing a new dataset for the ML team => Table creation for other teams consumption
+Step 1 - Building an ETL job to combine Sales data with Promotions data
+Now that you're familiar with the available tables, it’s time to generate a new table that you'll later share with other teams.
+- Download this notebook.
+- Open JupyterLab from the Build menu item at the top of the screen.
+- Upload the downloaded notebook by dragging it into the JupyterLab File browser or using the upload icon.
+- Double-click on the join_lakehouse_tables.ipynb notebook to open it and follow the instructions within.
+Note: Run each notebook cell in sequence, carefully following the instructions. To execute a Code cell, select it and click the Run button as shown below:
+
+In the notebook you will create a new analytical table that:
+🔗 Combines sales transaction records from S3 with promotional data from Redshift (see Sagemaker Lakehouse in action)
+📈 Calculates the number of active promotions per product category and region at the time of each sale
+🤖 Provides a cleaned and optimized dataset ready to be shared with the Machine Learning team
+
 ##### 1.3) Publishing the new dataset as new data asset making it discoverable
